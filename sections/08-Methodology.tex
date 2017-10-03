@@ -1,0 +1,33 @@
+\newpage 
+\section{Methodology}
+\subsection{Image sensor choice}
+To determine which image sensor will provide best quality, performance and energy-efficiency for my application, several criteria has to be evaluated. The most important are listed in table \ref{table:image_sensor_alternatives}. This table includes some of the considered alternatives for commercially available image sensor modules.
+
+\begin {table}[H]
+
+\centering
+\resizebox{\textwidth}{!}
+{\begin{tabular}{ | l | l | l | l | l | l | l |}
+  \hline
+  Parameter & NanEye2D  & NanEyeCustom & OV69481 & IMX094LQE & HM01B0 & IU233N2-Z \\ \hline
+  Size/footprint [mm] & 1.0 x 1.0 x 1.7 & TBD  & 0.575 x 0.575 & 35 x 35 & Less than 5mm^2 & 2.6 x 3.3 x 2.32\\
+  \hline
+  Supply voltage[V] & 1.8 & TBD & 3.3 & TBD & TBD & 1.2 / 1.8 / 2.7 \\
+  \hline
+  Power(typical active) [mW] & 4.2 & TBD & 25 & TBD & 	QVGA 60FPS (Typical) <4 mW \\QVGA 30FPS (Typical) <2 mW \\
+QQVGA 30FPS (Typical) 670 µW & Approx. 55 mW (All-pixel scan, 60 frame/s, Typ.) 
+Approx. 8 mW (All-pixel scan, 3 frame/s, Typ.) \\
+\hline
+Resolution [H x V] & 250 x 250 & TBD & 200 x 200 & TBD & 320 x 320 & 1296 x 816 \\
+\hline 
+Video data interface/output interface & 10-bit digital LVDS & TBD & Analog & TBD & 1b, 4b, 8b with frame / line SYNC & MIPI CSI-2 1 lane\\
+\hline
+Shuttertype & Rolling & TBD & Rolling & Rolling & TBD & TBD \\
+\hline
+Development kit/Evaluation kit avaialable? & Yes & No & Yes & No & No & No\\
+
+  
+  
+\end{tabular}}
+\caption {Image sensor comparison} \label{table:image_sensor_alternatives} 
+\end {table}
